@@ -1,0 +1,24 @@
+{
+  "name": "metafile",
+  "version": "1.0.0",
+  "description": "Upload a file to see file metadata.",
+  "main": "index.js",
+  "scripts": {
+    "test": "run metafile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnelson180/metafile.git"
+  },
+  "keywords": [
+    "file",
+    "size",
+    "metadata"
+  ],
+  "author": "Jake Nelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnelson180/metafile/issues"
+  },
+  "homepage": "https://github.com/jnelson180/metafile#readme"
+}
