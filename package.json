@@ -4,7 +4,7 @@
   "description": "Upload a file to see file metadata.",
   "main": "metafile.js",
   "scripts": {
-    "test": "run metafile.js"
+    "start": "run metafile.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/jnelson180/metafile#readme",
   "dependencies": {
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
     "multer": "^1.2.0"
   }
 }
