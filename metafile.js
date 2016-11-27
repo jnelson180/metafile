@@ -22,7 +22,10 @@ app.post('/filedata', upload.single('userFile'), function(req, res) {
     // but req.file is used instead (contains multer data) 
     console.log(req.file);
     res.send(JSON.stringify({
-        "size": req.file.size
+        "filename": req.file.originalname,
+        "size": req.file.size,
+        "encoding": req.file.encoding,
+        "mimetype": req.file.mimetype
     }));
 });
 
