@@ -20,20 +20,25 @@
     <h1>API Basejump: File Metadata Microservice</h1>
       <br />
     <h2>User stories:</h2>
-      <ul>
+      <ul class="text-info">
         <li>I can submit a FormData object that includes a file upload.</li>
         <li>When I submit something, I will receive the file size in bytes within the JSON response.</li>
      </ul>
-<div id="uploader">
+     <br />
 
-    <h2>Submit a file to view its filesize.</h2>
-
+    <h3>Submit a file to view its metadata.</h3>
+    <div id="uploader" class="well">
+    <p id="submitDescription" class="text-muted">
+    Uploads are only stored locally and are not saved on the application server.
+    </p>
+    <br />
     <!-- Form submission -->
     <FORM action="/filedata" enctype="multipart/form-data" method="post">
     <INPUT type="file" name="userFile" required></INPUT>&nbsp;&nbsp;
     <br />
-    <INPUT type="submit" value="Send"><INPUT type="reset"><br />
+    <INPUT type="submit" class="btn-primary" value="Send" />&nbsp;<INPUT type="reset" /><br />
     </FORM>
+<br />
 </div>
   </div>
 
