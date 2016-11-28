@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/mainstyle.css" type="text/css">
-
-<title>Jake's File Metadata Microservice</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/mainstyle.css" type="text/css">
+    <title>Jake's File Metadata Microservice</title>
 </head>
 <body>
+    <div class="container">
+        <div class="list-group sideButtons">
+            <a href="https://www.github.com/jnelson180" id="gpill" class="list-group-item" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="http://www.twitter.com/jnelson180" id="tpill" class="list-group-item" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/jnelson180" id="lpill" class="list-group-item" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <h1>API Basejump: File Metadata Microservice</h1>
+        <br />
+        <h2>User stories:</h2>
+        <ul class="text-info">
+            <li>I can submit a FormData object that includes a file upload.</li>
+            <li>When I submit something, I will receive the file size in bytes within the JSON response.</li>
+        </ul>
+        <br />
 
-  <div class="container">
-<div class="list-group sideButtons">
-    <a href="https://www.github.com/jnelson180" id="gpill" class="list-group-item" target="_blank"><i class="fa fa-github"></i></a>
-    <a href="http://www.twitter.com/jnelson180" id="tpill" class="list-group-item" target="_blank"><i class="fa fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/jnelson180" id="lpill" class="list-group-item" target="_blank"><i class="fa fa-linkedin"></i></a>
-</div>
-    <h1>API Basejump: File Metadata Microservice</h1>
-      <br />
-    <h2>User stories:</h2>
-      <ul class="text-info">
-        <li>I can submit a FormData object that includes a file upload.</li>
-        <li>When I submit something, I will receive the file size in bytes within the JSON response.</li>
-     </ul>
-     <br />
-
-    <h3>Submit a file to view its metadata.</h3>
-    <div id="uploader" class="well">
-    <p id="submitDescription" class="text-muted">
-    Uploads are only stored locally and are not saved on the application server.
-    </p>
-    <br />
-    <!-- Form submission -->
-    <FORM action="/filedata" enctype="multipart/form-data" method="post">
-    <INPUT type="file" name="userFile" required></INPUT>&nbsp;&nbsp;
-    <br />
-    <INPUT type="submit" class="btn-primary" value="Send" />&nbsp;<INPUT type="reset" /><br />
-    </FORM>
-<br />
-</div>
-  </div>
-
+        <h3>Submit a file to view its metadata.</h3>
+        <div id="uploader" class="well">
+            <p id="submitDescription" class="text-muted">
+                Uploads are only stored locally and are not saved on the application server.
+            </p>
+            <br />
+            <!-- Form submission -->
+            <FORM action="/filedata" enctype="multipart/form-data" method="post">
+                <INPUT type="file" name="userFile" required></INPUT>&nbsp;&nbsp;
+                <br />
+                <INPUT type="submit" class="btn-primary" value="Upload" />&nbsp;
+                <INPUT type="reset" /><br />
+            </FORM>
+            <br />
+        </div>
+    </div>
 </body>
 </html>
